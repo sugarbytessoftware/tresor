@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'tangerine'; /*a name to be used later*/
+    src: url(../fonts/Tangerine_Regular.ttf);
+}
+
+.item > img{
+    height:100%;
+    opacity:0.7;
+}
+
+#myCarousel{
+    background-color:black;
+}
+
+.overlay {
+    color:#fff;
+    position:absolute;
+    z-index:12;
+    left:0;
+    top:40%;
+    width:100%;
+    text-align:center;
+}
+
+.tales {
+    width: 100%;
+}
+
+#page-sub-title{
+    opacity: 0;
+    transition: opacity .50s ease-in-out;
+    -moz-transition: opacity .50s ease-in-out;
+    -webkit-transition: opacity .50s ease-in-out;
+}
+
+#page_title{
+    font-size: 100px;
+    font-family:tangerine;
+}
+
+#myCarousel{
+    font-size: 40px;
+}
+
+#myCarousel:hover > .carousel-title > #page-sub-title{
+    opacity: 1;
+}
+
+
+.navbar{
+    background-color: rgba(223, 0, 44, 1);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: rgba(255, 255, 255, 0.36);
+}
+
+.mail-btn{
+    height: 27px;
+    padding: 1px 8px 1px 6px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background-color: #e42c00;
+    border-radius: 3px;
+    margin: auto;
+    border:none;
+    text-align:center;
+}
+
+.mail-btn:hover{
+    background-color: #972000;
+}
+
+.mail-btn>img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.fb-like{
+    padding-top: 5px;
+}
+
+.gallery_item{
+    overflow:hidden;
+    text-align: center;
+    border-radius: 4%;
+    width:360px;
+    height:230px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+.gallery_item > a > img{
+    height: 100%;
+}
+
+.page-header{
+    font-family:tangerine;
+    font-size: 50px;
+    font-weight: 600;
+    color: #c00a00;
+}
+
+.price{
+    font-size: 25px;
+    padding-top:60px;
+    color: #ffffff;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    pointer-events:none;
+}
+
+
+ul.nav a:hover { color: #000000 !important;
+
+    transition: color .25s ease-in-out;
+    -moz-transition:color.25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .carousel{
+        max-height: 200px !important;
+    }
+
+    #page_title{
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    #myCarousel:hover > .carousel-title > #page-sub-title{
+        opacity: 0;
+    }
+
+    .overlay{
+        top: 20%;
+    }
+}
+
